@@ -27,7 +27,7 @@ public class Filter implements Lock {
             victim[L] = i;
 
             for (int k = 0; k < threadCount; k++) {
-                while ((k != i) && (level[k] >= i && victim[i] == i)) {
+                while ((k != i) && (level[k] >= L && victim[L] == i)) {
                 }
             }
         }
